@@ -1,0 +1,146 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corpo da página */
+html, body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f1f1f1;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Contêiner principal */
+.wrapper {
+    max-width: 1200px;
+    margin: 20px auto;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+/* Menu de navegação */
+.menu {
+    background-color: #004d99;
+    padding: 10px 20px;
+}
+
+.menu ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.menu a:hover {
+    background-color: #3884c7;
+}
+
+/* Header */
+.header img {
+    width: 100%;
+    height: auto;
+    border-bottom: 5px solid #004d99;
+}
+
+/* Conteúdo */
+.content {
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+.content h1 {
+    color: #004d99;
+    margin-bottom: 15px;
+    font-size: 1.8em;
+}
+
+.content p {
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+.content table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    text-align: left;
+}
+
+.content table th, .content table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+
+.content table th {
+    background-color: #004d99;
+    color: white;
+}
+
+/* Formulário */
+form {
+    margin-top: 20px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+form input, form textarea, form button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+form button {
+    background-color: #004d99;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #ff5722;
+}
+
+/* Rodapé */
+.footer {
+    background-color: #004d99;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 0.9em;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .menu ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu a {
+        margin-bottom: 10px;
+    }
+
+    .content h1 {
+        font-size: 1.5em;
+    }
+}
